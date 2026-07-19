@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>KIJIJITECH - Contact</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+<img src="images/logo.jpg">
+</div>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about-1.html">About</a>
+
+<a href="services-1.html">Services</a>
+
+<a href="careers-1.html">Careers</a>
+
+<a href="contact-1.html">Contact</a>
+
+</nav>
+
+
+<div class="login-area">
+
+<a href="login-1.html">Login</a>
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+<!-- Contact Introduction -->
+
+
+<section class="services-hero">
+
+
+<h2>We're Here To Help You</h2>
+
+
+<p>
+Have a question or want to discuss how we can help your business?
+Reach out to us through any of the channels below.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Contact Information -->
+
+
+<section class="core-services">
+
+
+<h2>Contact Information</h2>
+
+
+<div class="service-grid">
+
+
+
+<div class="service-card">
+
+
+<h3>Email Us</h3>
+
+
+<p>
+info@kijijitech.com
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="service-card">
+
+
+<h3>Business Hours</h3>
+
+
+<p>
+
+Monday - Friday:<br>
+9:00 AM - 6:00 PM
+
+<br><br>
+
+Saturday:<br>
+10:00 AM - 4:00 PM
+
+<br><br>
+
+Sunday:<br>
+Closed
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="service-card">
+
+
+<h3>Visit Us</h3>
+
+
+<p>
+See our office locations below
+and connect with our team.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Contact Form -->
+
+
+<section class="technology">
+
+
+<h2>Get In Touch With Us</h2>
+
+
+<p>
+Fill out the form below and our team will get back to you within 24 hours.
+</p>
+
+
+<br>
+
+
+
+
+
+<form class="contact-form" onsubmit="showThankYou(event)">
+
+
+
+<h3>Personal Information</h3>
+
+
+
+<input type="text" id="name" placeholder="Enter Your Name">
+
+
+<input type="email" id="email" placeholder="Enter Your Email ID">
+
+
+
+
+
+
+<h3>Inquiry Details</h3>
+
+
+
+<input type="text" id="company" placeholder="Enter Your Company Name">
+
+
+<input type="text" id="subject" placeholder="Enter Subject">
+
+
+<textarea id="message" placeholder="Enter Your Message"></textarea>
+
+
+
+
+<p id="error-message"></p>
+
+
+
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+
+
+</form>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Office Section -->
+
+
+<section class="contact-banner">
+
+
+<h2>Our Office Location</h2>
+
+
+<p>
+Connect with KIJIJITECH for reliable technology
+solutions and digital transformation services.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+© 2026 KIJIJITECH. All Rights Reserved.
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function showThankYou(event){
+
+
+event.preventDefault();
+
+
+
+let name = document.getElementById("name").value;
+
+let email = document.getElementById("email").value;
+
+
+
+let error = document.getElementById("error-message");
+
+
+
+
+
+if(name === "" || email === ""){
+
+
+error.innerHTML = "Please fill the details";
+
+error.style.color = "red";
+
+error.style.fontWeight = "bold";
+
+
+}
+
+
+
+else{
+
+
+error.innerHTML = "";
+
+
+alert("Thank you for your interest in KIJIJITECH. Our team will get back to you within 24 hours.");
+
+
+
+document.querySelector(".contact-form").reset();
+
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

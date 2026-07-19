@@ -1,0 +1,727 @@
+/* ===== GLOBAL STYLE ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Nirmala UI", Arial, sans-serif;
+}
+
+
+body{
+
+    background:linear-gradient(
+        to bottom,
+        #003366,
+        #0066cc 40%,
+        #87ceeb
+    );
+
+    color:#333;
+    min-height:100vh;
+
+}
+
+
+/* ===== HEADER ===== */
+
+
+header{
+
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 8%;
+
+    background:white;
+
+    box-shadow:0 3px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+.logo img{
+
+    width:220px;
+    height:90px;
+    object-fit:contain;
+
+}
+
+
+
+nav{
+
+    display:flex;
+    gap:30px;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+    color:#003366;
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+
+nav a:hover{
+
+    color:#0099ff;
+
+}
+
+
+
+.login-area a{
+
+    background:#0066cc;
+    color:white;
+    padding:10px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* ===== HOME HERO ===== */
+
+
+.hero{
+
+    min-height:450px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px;
+
+    background:linear-gradient(
+        120deg,
+        #003366,
+        #0099ff
+    );
+
+}
+
+
+
+.hero h2{
+
+    font-size:45px;
+    color:white;
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    color:white;
+    font-size:20px;
+    max-width:750px;
+    line-height:1.7;
+
+}
+
+
+
+button{
+
+    margin-top:25px;
+
+    padding:12px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#0066cc;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+    background:#003366;
+
+}
+
+
+
+
+
+/* ===== COMMON SECTIONS ===== */
+
+
+.box,
+.core-services,
+.technology,
+.process,
+.stats,
+.services-preview{
+
+    width:85%;
+
+    margin:50px auto;
+
+    padding:50px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* ===== WELCOME SECTION ===== */
+
+
+.box h2{
+
+    color:#0056b3;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.box p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* ===== SERVICES ===== */
+
+
+.services-hero{
+
+    text-align:center;
+
+    background:white;
+
+    width:85%;
+
+    margin:50px auto;
+
+    padding:60px;
+
+    border-radius:20px;
+
+}
+
+
+
+.services-hero h2{
+
+    color:#0066cc;
+
+    font-size:38px;
+
+}
+
+
+
+.services-hero p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.service-card{
+
+    background:#f5f9ff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.service-card h3{
+
+    color:#0066cc;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.service-card p{
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+
+
+/* ===== STATS ===== */
+
+
+.stats-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.stat-box{
+
+    width:220px;
+
+    padding:30px;
+
+    background:#f5f9ff;
+
+    border-radius:15px;
+
+}
+
+
+
+.stat-box h1{
+
+    color:#0066cc;
+
+    font-size:40px;
+
+}
+
+
+
+
+
+
+/* ===== TECHNOLOGY ===== */
+
+
+.tech-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.tech-box{
+
+    width:220px;
+
+    padding:25px;
+
+    background:#f5f9ff;
+
+    border-radius:15px;
+
+}
+
+
+
+.tech-box h3{
+
+    color:#0066cc;
+
+}
+
+
+
+
+
+
+
+/* ===== PROCESS ===== */
+
+
+.process-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.process-container div{
+
+    width:180px;
+
+    padding:25px;
+
+    background:#f5f9ff;
+
+    border-radius:15px;
+
+}
+
+
+
+.process-container h3{
+
+    font-size:35px;
+
+    color:#0066cc;
+
+}
+
+
+
+
+
+
+
+/* ===== CONTACT FORM ===== */
+
+
+.contact-form{
+
+    width:60%;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+
+
+.contact-form textarea{
+
+    height:150px;
+
+}
+
+
+
+.contact-form h3{
+
+    color:#0066cc;
+
+}
+
+
+
+
+
+/* ===== CONTACT BANNER ===== */
+
+
+.contact-banner{
+
+    width:85%;
+
+    margin:50px auto;
+
+    padding:60px;
+
+    text-align:center;
+
+    background:#0066cc;
+
+    color:white;
+
+    border-radius:20px;
+
+}
+
+
+
+.contact-banner h2{
+
+    font-size:35px;
+
+}
+
+
+
+
+
+
+/* ===== LOGIN PAGE ===== */
+
+
+.login-box{
+
+    width:400px;
+
+    margin:80px auto;
+
+    padding:40px;
+
+    background:white;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+.login-box input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+}
+
+
+
+
+
+/* ===== FOOTER ===== */
+
+
+footer{
+
+    background:#003366;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+
+
+/* ===== RESPONSIVE ===== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+nav{
+
+    flex-direction:column;
+
+}
+
+
+.service-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.contact-form{
+
+    width:90%;
+
+}
+
+
+}
+
+/* ===== Home Hero IT Background ===== */
+
+
+.hero{
+
+    min-height:450px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.85),
+        rgba(255,255,255,0.85)
+    ),
+    url("images/technology-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:800px;
+
+}
+
+
+
+.hero h2{
+
+    color:#0056b3;
+
+    font-size:45px;
+
+    font-weight:bold;
+
+}
+
+
+
+.hero p{
+
+    color:#333;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    margin-top:20px;
+
+}
